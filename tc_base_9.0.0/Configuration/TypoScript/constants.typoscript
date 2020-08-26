@@ -1,0 +1,23 @@
+plugin {
+    tx_tcbase {
+        view {
+            templateRootPath = EXT:tc_base/Resources/Private/Templates/
+            partialRootPath = EXT:tc_base/Resources/Private/Partials/
+            layoutRootPath = EXT:tc_base/Resources/Private/Layouts/
+        }
+
+        settings {
+            stylesPaths {
+                10 = EXT:tc_base/Resources/Private/StyleSheets/Styling.scss
+            }
+
+            javascriptPaths {
+                10 = EXT:tc_base/Resources/Private/JavaScripts/JavaScript.js
+            }
+        }
+
+        persistence {
+            storagePid =
+        }
+    }
+}

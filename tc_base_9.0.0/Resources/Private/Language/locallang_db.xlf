@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file datatype="plaintext">
+		<body>
+			<trans-unit id="tt_content.tcbase_plugin.name">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tt_content.tcbase_plugin.description">
+				<source>Description...</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

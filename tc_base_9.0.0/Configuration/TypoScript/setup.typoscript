@@ -1,0 +1,53 @@
+lib {
+    contentElement {
+        settings {
+            addClass {
+                tcbase_plugin = tx-tc-base
+            }
+        }
+    }
+}
+
+plugin {
+    tx_tcbase {
+        view {
+            templateRootPaths {
+                10 = {$plugin.tc_base.view.templateRootPath}
+            }
+
+            partialRootPaths {
+                10 = {$plugin.tc_base.view.partialRootPath}
+            }
+
+            layoutRootPaths {
+                10 = {$plugin.tc_base.view.layoutRootPath}
+            }
+        }
+
+        settings {
+            generalWidth = {$styles.variables.generalWidth}
+            tabletMaxWidth = {$styles.variables.tabletMaxWidth}
+            tabletMinWidth = {$styles.variables.tabletMinWidth}
+
+            stylesPaths {
+                10 = {$plugin.tc_base.settings.stylesPaths.10}
+            }
+
+            javascriptPaths {
+                10 = {$plugin.tc_base.settings.javascriptPaths.10}
+            }
+        }
+
+        persistence {
+            storagePid = {$plugin.tc_base.persistence.storagePid}
+        }
+    }
+}
+
+module {
+    tc_base {
+        settings < plugin.tc_base.settings
+        persistence < plugin.tc_base.persistence
+        view < plugin.tc_base.view
+    }
+}

@@ -1,0 +1,9 @@
+{
+	"name": "typoconsult/tc-base",
+	"type": "typo3-cms-extension",
+	"autoload": {
+		"psr-4": {
+			"TYPOCONSULT\\TcBase\\": "Classes"
+		}
+	}
+}
